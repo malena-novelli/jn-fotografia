@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'Posts.apps.PostsConfig',
     'ckeditor',
     'ckeditor_uploader',
-    'members',
 ]
 
 MIDDLEWARE = [
