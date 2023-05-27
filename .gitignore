@@ -1,5 +1,5 @@
 db.sqlite3
-static/images
+static_images
 env
 Blog/__pycache__
 Posts/__pycache__
