@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+
+<div class="container-fluid">
+    <div class="row row-cols-2 g-4">
+        {% for post in posts %}
+        <div class="col-md-6">
+            <div class="card mb-1 bg-dark text-white">
+                <a href="{% url 'post' post.id %}" class="card-link my-custom-link">
+                <div style="position: relative;">
+                    <img src="{{post.imagen_portada.url}}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body" style="height: fit-content;">
+                    <h5 class="card-title">{{post.titulo}}</h5>
+                    <p class="card-text">{{post.subtitulo}}</p>
+                    
+                </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
+    
+    
+
+    
+
+                
+
+

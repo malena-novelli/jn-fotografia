@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+<h1>Post page</h1>
+{% block content %}
+<div class="container">
+   <!--<img class="img-thumbnail" src="{{post.imagen_portada.url}}"> --> 
+    <br>
+    <h1>{{post.titulo}}</h1>
+    <h5>{{post.subtitulo}}</h5>
+    <p>{{post.descripcion|safe}}</p>
+
+    {% if user.is_authenticated %}
+    <a type="button" class="btn btn-light" href="{% url 'update-post' post.id %}">Actualizar</a>
+    <a type="button" class="btn btn-danger" href="{% url 'delete-post' post.id %}?next=/post/{{post.id}}">Eliminar</a>
+    {% endif %}
+    <br>  
+</div>
+
+{% endblock %}
