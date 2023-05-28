@@ -1,6 +1,6 @@
 databases:
   - name: jn-postgres
-    databaseName: jn-postgres
+    databaseName: jnblog
     user: default
 
 services:
