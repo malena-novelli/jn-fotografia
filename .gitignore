@@ -1,5 +1,7 @@
 db.sqlite3
 static_images
 env
-Blog/__pycache__
-Posts/__pycache__
+**/__pycache__
+.env
+.python-version
+staticfiles
