@@ -3,6 +3,10 @@ databases:
     databaseName: jn-postgres
     user: default
 
+disk:
+  name: jn-images
+  mountPath: /usr/share/jn-images
+
 services:
   - type: web
     name: jn-fotografia
@@ -14,6 +18,8 @@ services:
         fromDatabase:
           name: jn-postgres
           property: connectionString
+      - key: MEDIA_ROOT
+        value: /usr/share/jn-images
       - key: SECRET_KEY
         generateValue: true
       - key: WEB_CONCURRENCY
