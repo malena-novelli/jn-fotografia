@@ -22,6 +22,6 @@ services:
       - DB_HOST=postgres
       - MEDIA_ROOT=/usr/src/app/images
     ports:
-      - 147.182.218.0:8000
+      - 8000:8000
     volumes:
       - ./images/:/usr/src/app/static/images
