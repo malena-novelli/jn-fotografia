@@ -8,7 +8,6 @@ services:
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASS}
       - POSTGRES_DB=${DB_NAME}
-      - DJANGO_SETTINGS_MODULE='Blog.settings'
     volumes:
       - ./db-data/:/var/lib/postgresql/data/
   
