@@ -1,5 +1,6 @@
 db.sqlite3
 static/images
+staticfiles/images
 env
 **/__pycache__
 .env
